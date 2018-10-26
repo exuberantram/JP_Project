@@ -56,7 +56,13 @@ public abstract class Product implements Item, Comparable<Product> {
         return serialNumber;
     }
 
-
+    @Override
+    public int compareTo(Product prod) {
+        this.name.compareTo(prod.getName());
+        int ans;
+        ans = this.name.compareTo(prod.getName());
+        return ans;
+    }
 
     //Formatting the toString method to print a pre-formatted message
     public String toString() {
