@@ -4,43 +4,66 @@
  */
 package com.company;
 
+//importing java utilities to allow creation of a date method
+
 import java.util.Date;
 
-//    create an abstract type called Product that implements Item interface
-public abstract class Product implements Item {
+/*An abstract class can't be instantiated. Similar to interfaces but can have concrete classes
+as well*/
+public abstract class Product implements Item, Comparable<Product> {
 
-//    Product will implement the basic functionality that all items on a production line should have
-
+    //Declaring class variables
     private int serialNumber;
     private String manufacturer;
     private Date manufacturedOn;
     private String name;
 
-//    Add an integer class variable called currentProductionNumber.
-//    This will store the next number to be assigned to serialNumber.
+    private static int currentProductionNumber = 1;
 
-    private int currentProductionNumber = 0;
-
-//    Constructor that will take in the name of the product and set this to the field variable name
-//    assign a serial number from the currentProductionNumber
-//    currentProductionNumber should be incremented in readiness for the next instance.
-//    Set manufacturedOn as the current date and time
-    public Product(String n) {
-        name = n;
+    public Product() {
+        name = "Default Name";
         serialNumber = currentProductionNumber++;
         manufacturedOn = new Date();
+        manufacturer = Item.manufacturer;
     }
 
-//    Add a toString method that will return the following:
-//    Manufacturer : OraclProduction
-//    Serial Number : 1\n
-//    Date : Thu May 14 15:18:43 BST 2015\n
-//    Name : Product Name
+    //Constructor taking the String name as a parameter
+    public Product(String name) {
+        this.name = name;
+        serialNumber = currentProductionNumber++;
+        manufacturedOn = new Date();
+        manufacturer = Item.manufacturer;
+    }
+
+    //Implementation of the interface methods
+    public void setProductionNumber(int pn) {
+        currentProductionNumber = pn;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Date getManufacturerDate() {
+        return manufacturedOn;
+    }
+
+    public int getSerialNumber() {
+        return serialNumber;
+    }
+
+
+
+    //Formatting the toString method to print a pre-formatted message
     public String toString() {
-        return "Manufacturer : OraclProduction\n" +
-                "Serial Number : 1\n" +
-                "Date : Thu May 14 15:18:43 BST 2015\n" +
-                "Name : Product Name";
+        return
+                "Manufacturer : " + manufacturer + "\n"
+                        + "Serial Number : " + serialNumber + "\n"
+                        + "Date : " + manufacturedOn + "\n"
+                        + "Name : " + name + "\n";
     }
-
 }

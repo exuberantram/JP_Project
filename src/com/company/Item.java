@@ -5,29 +5,20 @@
 
 package com.company;
 
+
+//importing java utilities to allow creation of a date method
 import java.util.Date;
 
-// create an interface called Item
-
+/*An interface can only have methods with empty bodies. Any implementation of an interface
+requires the use of each method in the interface.*/
 public interface Item {
 
-    //will force all classes to implement the following:
-//  A constant called manufacturer that would be set to “OracleProduction”.
     final String manufacturer = "OracleProduction";
 
-    //  A method setProductionNumber that would have one integer parameter
-    public void setProductionNumber(int productionNumber);
-
-    //  A method setName that would have one String parameter
-    public void setName(String name);
-
-    //  A method getName that would return a String
-    public String getName();
-
-    //  A method getManufactureDate that would return a Date
-    public Date getManufactureDate();
-
-    //  A method getSerialNumber that would return an int
-    public int getSerialNumber();
-
+    public void setProductionNumber(int pn);//Method to track the production number
+    public void setName(String name);//Method to set the item name
+    public String getName();//Getter to access the name
+    public Date getManufacturerDate();//Getter to retrieve the date and time
+    public int getSerialNumber();//Method to retrieve the item serial number
 }
+
