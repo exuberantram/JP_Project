@@ -4,12 +4,11 @@
  */
 package com.company;
 
-//importing java utilities to allow creation of a date method
+//Java utilities allow creation of date method
 
 import java.util.Date;
 
-/*An abstract class can't be instantiated. Similar to interfaces but can have concrete classes
-as well*/
+/*Abstract classes can't be instantiated. They can have concrete classes but are still like interfaces. */
 public abstract class Product implements Item, Comparable<Product> {
 
     //Declaring class variables
@@ -20,6 +19,7 @@ public abstract class Product implements Item, Comparable<Product> {
 
     private static int currentProductionNumber = 1;
 
+    //Default constructor for Product
     public Product() {
         name = "Default Name";
         serialNumber = currentProductionNumber++;
@@ -40,6 +40,7 @@ public abstract class Product implements Item, Comparable<Product> {
         currentProductionNumber = pn;
     }
 
+    //getters and setters
     public void setName(String name) {
         this.name = name;
     }
@@ -56,6 +57,7 @@ public abstract class Product implements Item, Comparable<Product> {
         return serialNumber;
     }
 
+    /*enabling functionality to allow classes to be sorted by name with Collections.sort*/
     @Override
     public int compareTo(Product prod) {
         this.name.compareTo(prod.getName());
