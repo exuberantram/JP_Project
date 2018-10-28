@@ -1,18 +1,27 @@
 package com.company;
 
+/**
+ * @author      Victoria Bagnall
+ * @version     2
+ * @since       1
+ */
+
 public class Screen implements ScreenSpec {
 
+    //inititalize class variables
     String resolution;
     int refreshRate;
     int responseTime;
 
 
+    //default constructor
     public Screen() {
         this.resolution = "Default";
         this.refreshRate = 0;
         this.responseTime = 0;
     }
 
+    //constructor to pass the resolution, refreshRate, and responseTime
     public Screen(String resolution,
                   int refreshRate,
                   int responseTime) {
@@ -21,6 +30,7 @@ public class Screen implements ScreenSpec {
         this.responseTime = responseTime;
     }
 
+    //get methods
     @Override
     public String getResolution() {
         return resolution;

@@ -1,6 +1,7 @@
 /**
- * Victoria Bagnall
- * OOP Program Alpha
+ * @author      Victoria Bagnall
+ * @version     2
+ * @since       1
  */
 
 package com.company;

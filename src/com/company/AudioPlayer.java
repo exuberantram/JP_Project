@@ -1,5 +1,11 @@
 package com.company;
 
+/**
+ * @author      Victoria Bagnall
+ * @version     2
+ * @since       1
+ */
+
 public class AudioPlayer extends Product implements MultimediaControl {
 
     private String audioSpecification;

@@ -1,5 +1,12 @@
+/**
+ * @author      Victoria Bagnall
+ * @version     1
+ * @since       1
+ */
+
 package com.company;
 
+//adds functionality to "player" controls
 public interface MultimediaControl {
 
     public void play();//Method adding play functionality
