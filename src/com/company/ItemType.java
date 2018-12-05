@@ -1,13 +1,18 @@
+package com.company;
+/*
+ * Copyright (c) 2010, 2013, 2018 Oracle and/or its affiliates. All rights reserved.
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ *
+ */
+
 /**
  * Victoria Bagnall
  * OOP Program Alpha
+ *
+ * @author Victoria Bagnall
+ * @version 1
+ * @since 1
  */
-/**
- * @author      Victoria Bagnall
- * @version     1
- * @since       1
- */
-package com.company;
 
 // create enum of ItemType
 public enum ItemType {
@@ -27,7 +32,7 @@ public enum ItemType {
     }
 
     //Get method so the private String type can be accessed outside of this class
-    public String getCode(){
+    public String getCode() {
         return code;
     }
 }

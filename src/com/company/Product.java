@@ -1,15 +1,24 @@
-/**
- * @author      Victoria Bagnall
- * @version     2
- * @since       1
- */
 package com.company;
+/*
+ * Copyright (c) 2010, 2013, 2018 Oracle and/or its affiliates. All rights reserved.
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ *
+ */
 
-//Java utilities allow creation of date method
+import java.util.Date; //Java utilities allow creation of date method
 
-import java.util.Date;
+/**
+ * Abstract classes can't be instantiated.
+ * They can have concrete classes but are still like interfaces
+ * Can be a subclass
+ *
+ * @author Victoria Bagnall
+ * @version 2
+ * @serial
+ * @since 1
+ */
 
-/*Abstract classes can't be instantiated. They can have concrete classes but are still like interfaces. */
+//Abstract classes can't be instantiated. They can have concrete classes but are still like interfaces.
 public abstract class Product implements Item, Comparable<Product> {
 
     //Declaring class variables

@@ -1,9 +1,10 @@
 package com.company;
 
 /**
- * @author      Victoria Bagnall
- * @version     2
- * @since       1
+ * @author Victoria Bagnall
+ * @version 2
+ * @serial
+ * @since 1
  */
 
 public class Screen implements ScreenSpec {

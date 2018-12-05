@@ -1,9 +1,9 @@
 package com.company;
 
 /**
- * @author      Victoria Bagnall
- * @version     2
- * @since       1
+ * @author Victoria Bagnall
+ * @version 2
+ * @since 1
  */
 
 public enum MonitorType {
@@ -20,7 +20,7 @@ public enum MonitorType {
     }
 
     //Get method so the private String type can be accessed outside of this class
-    public String getType(){
+    public String getType() {
         return Type;
     }
 }
