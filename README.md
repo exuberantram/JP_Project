@@ -18,3 +18,10 @@ Is "2. Add a new product" is selected, choose from the following menu:
 3: Return to Main Menu
 ```
 
+![Image of OraclProduction running](https://github.com/exuberantram/JP_Project/blob/master/jp%20project%20running.PNG)
+
+##Structure 
+![Image of the UML for the project structure](https://github.com/exuberantram/JP_Project/blob/master/company.uml.PNG)
+
+##Contributors
+@Actony25 (Anthony Cangelosi), @TPettis (Tim Pettis), @jfg357 (Juan Gaviria)
